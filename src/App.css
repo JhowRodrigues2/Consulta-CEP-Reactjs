@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.Header {
+  height: 100%;
+  height: 10vh;
+  background-color: rgb(111, 49, 170);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Footer {
+  height: 100%;
+  height: 10vh;
+  background-color: rgb(111, 49, 170);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Footer a {
+  color: white;
+  text-decoration: none;
+}
+.BuscaCep {
+  height: 100%;
+  height: 80vh;
+  display: Flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 11vh;
+}
+.main-top button {
+  background-color: rgb(111, 49, 170);
+  border: none;
+  color: white;
+  height: 30px;
+  border-radius: 8px;
+  width: 49%;
+}
+.main-top button:hover {
+  background-color: rgb(154, 68, 235);
+  transition: 0.3s ease;
+}
+.main-top [type="text"] {
+  width: 49%;
+  height: 30px;
+}
+.main {
+  width: 50%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: space-around;
+}
+.main h1 {
+  margin-bottom: 25px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
