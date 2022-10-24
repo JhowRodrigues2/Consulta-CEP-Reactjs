@@ -17,7 +17,6 @@ export default function BuscaCep() {
       })
       .catch(() => {
         setError("CEP Inválido!");
-        setDATA("");
       });
   };
   console.log(DATA);
