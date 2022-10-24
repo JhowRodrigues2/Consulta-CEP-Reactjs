@@ -38,7 +38,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  height: 11vh;
+  height: 5vh;
 }
 .main-top button {
   background-color: rgb(111, 49, 170);
@@ -47,6 +47,11 @@
   height: 30px;
   border-radius: 8px;
   width: 49%;
+  cursor: pointer;
+}
+.error {
+  color: rgb(189, 0, 0);
+  font-weight: bold;
 }
 .main-top button:hover {
   background-color: rgb(154, 68, 235);
