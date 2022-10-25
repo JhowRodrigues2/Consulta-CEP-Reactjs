@@ -6,18 +6,16 @@
   font-family: "Roboto Condensed", sans-serif;
 }
 .Header {
-  height: 100%;
   height: 10vh;
-  background-color: rgb(111, 49, 170);
+  background-color: #4277ff;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .Footer {
-  height: 100%;
   height: 10vh;
-  background-color: rgb(111, 49, 170);
+  background-color: #4277ff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,51 +25,78 @@
   text-decoration: none;
 }
 .BuscaCep {
-  height: 100%;
-  height: 80vh;
+  height: 75.7vh;
   display: Flex;
   justify-content: center;
   align-items: center;
-}
-
-.main-top {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  height: 5vh;
-}
-.main-top button {
-  background-color: rgb(111, 49, 170);
-  border: none;
-  color: white;
-  height: 30px;
-  border-radius: 8px;
-  width: 49%;
-  cursor: pointer;
-}
-.error {
-  color: rgb(189, 0, 0);
-  font-weight: bold;
-}
-.main-top button:hover {
-  background-color: rgb(154, 68, 235);
-  transition: 0.3s ease;
-}
-.main-top [type="text"] {
-  width: 49%;
-  height: 30px;
+  margin: 20px;
 }
 .main {
-  width: 50%;
-  height: 40vh;
+  color: rgb(91, 94, 94);
+  width: 600px;
+  height: 70vh;
+  background-color: #ececec;
   display: flex;
   flex-direction: column;
-  padding: 30px;
-  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  box-shadow: 2px;
 }
-.main h1 {
-  margin-bottom: 25px;
-  font-size: 20px;
+img {
+  max-width: 600px;
+}
+.inputArea {
   display: flex;
-  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.inputArea input {
+  width: 70%;
+  height: 30px;
+  padding-left: 10px;
+}
+
+button {
+  width: 20%;
+  background-color: #4277ff;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  color: white;
+}
+button:hover {
+  background-color: #1a46b6;
+}
+.form {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 30px;
+}
+.form input {
+  width: 100%;
+  height: 30px;
+}
+.error {
+  font-weight: bold;
+  color: red;
+}
+@media (max-width: 1300px) {
+  .BuscaCep {
+    flex-wrap: wrap;
+  }
+  .main {
+    min-width: 80vw;
+    height: 100%;
+  }
+  img {
+    max-width: 80vw;
+  }
+  .Footer {
+    display: none;
+  }
 }

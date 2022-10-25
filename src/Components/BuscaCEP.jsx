@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import Form from "./Form";
+import Footer from "./Footer.jsx";
 
 export default function BuscaCep() {
   const [CEP, setCEP] = useState("");
@@ -20,7 +22,6 @@ export default function BuscaCep() {
         setDATA("");
       });
   };
-  console.log(DATA);
 
   const handleChange = ({ target }) => {
     setCEP(target.value);
@@ -31,7 +32,7 @@ export default function BuscaCep() {
       <div className="main">
         <h1>Informe o CEP</h1>
 
-        <div className="main-top">
+        <div className="inputArea">
           <input
             type="text"
             name="cepCidade"
@@ -42,22 +43,16 @@ export default function BuscaCep() {
           <button onClick={searchAddress}>Buscar</button>
         </div>
         <p className="error">{error}</p>
-        <label>Localidade: </label>
-        <input
-          type="text"
-          value={DATA ? DATA.logradouro : ""}
-          disabled={true}
-        />
-        <label>Bairro: </label>
-        <input type="text" value={DATA ? DATA.bairro : ""} disabled={true} />
-        <label>cidade: </label>
-        <input
-          type="text"
-          value={DATA ? DATA.localidade : ""}
-          disabled={true}
-        />
-        <label>UF: </label>
-        <input type="text" value={DATA ? DATA.uf : ""} disabled={true} />
+
+        <div className="form">
+          <Form local={"Localidade:"} value={DATA ? DATA.logradouro : ""} />
+          <Form local={"Bairro:"} value={DATA ? DATA.bairro : ""} />
+          <Form local={"Cidade:"} value={DATA ? DATA.localidade : ""} />
+          <Form local={"UF:"} value={DATA ? DATA.uf : ""} />
+        </div>
+      </div>
+      <div>
+        <img src="./src/IMG/img.png" alt="logo" />
       </div>
     </div>
   );

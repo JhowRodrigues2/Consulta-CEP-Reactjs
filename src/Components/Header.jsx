@@ -2,7 +2,7 @@ import React from "react";
 export default function Header() {
   return (
     <div className="Header">
-      <h1>BUSCACEP APP </h1>
+      <h1>BuscaCep App</h1>
     </div>
   );
 }
