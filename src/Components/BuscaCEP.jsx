@@ -1,8 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Form from "./Form";
-import Footer from "./Footer.jsx";
-
+import img from "/src/IMG/img.png";
 export default function BuscaCep() {
   const [CEP, setCEP] = useState("");
   const [DATA, setDATA] = useState([false]);
@@ -52,7 +51,7 @@ export default function BuscaCep() {
         </div>
       </div>
       <div>
-        <img src="./src/IMG/img.png" alt="logo" />
+        <img src={img} alt="logo" />
       </div>
     </div>
   );
